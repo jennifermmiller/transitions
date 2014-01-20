@@ -1,0 +1,154 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+.box-1{
+	margin: 50px auto;
+	width: 200px;
+	height: 125px;
+	background: rgb(179,179,238);
+	box-shadow: inset 0 -6px 0 rgb(121,123,180);
+	border-radius: 6px;
+	-webkit-transition: all 0.1s ease; /*all represents all of what comes next. can select property and ignore the rest*/
+}
+
+.box-1:hover{
+	margin-top: 53px;
+	height: 122px;
+	-webkit-transform: rotate(180deg);
+	box-shadow: inset 0 -3px 0 rgb(121,121,180);
+}
+
+
+/*.box-1:active, .active {
+	margin-top: 53px;
+	height: 122px;
+	box-shadow: inset 0 3px 0 rgb(121,121,180);
+}*/
+
+.box-2{
+	margin: 50px auto;
+	height: 200px;
+	width: 200px;
+	background: rgb(179,179,238);	
+	-webkit-transition: all 0.3s ease;
+}
+
+.box-2:hover{
+	-webkit-transform: rotate(60deg);
+	border-radius: 200px;
+}
+
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7,
+.box-8,
+.box-9,
+.box-10,
+.box-11,
+.box-12,
+.box-13,
+.box-14,
+.box-15{
+	width: 200px;
+	height: 200px;
+	margin: 50px auto;
+}
+
+.box-3{
+	border: 1px solid red;
+	background: yellow;
+	-webkit-transition: all 1s ease;
+}
+
+.box-3:hover{
+	background: orange;
+	width: 100px;
+	height: 100px;
+	-webkit-transition: all 4s;
+}
+
+.box-4{
+	background: pink;
+	color: red;
+	font-size: 16px;
+	-webkit-transition: all 1s easeout;
+}
+
+.box-4:active{
+	background: purple;
+	font-size: 32px;
+	-webkit-transition: all 1s easeout;
+}
+
+.box-5{
+	background: green;
+	border: darkgreen;
+	box-shadow: 1px 1px 2px gray;
+	-webkit-transition: all 0.5s;
+}
+
+.box-5:hover{
+	background: lightgreen;
+	box-shadow: 3px 3px 2px gray;
+	-webkit-transform: rotate(45deg);
+	-webkit-transition: all 0.5s;	
+}
+
+.box-6{
+	background: lightblue;
+	color: yellow;
+	-webkit-transition: all 1s linear;
+}
+
+.box-6:active{
+	background: blue;
+	color: orange;
+	font-size: 32px;
+	-webkit-transform: rotate(180deg);
+	-webkit-transition: all .5s linear;
+}
+
+.box-7{
+	background: black;
+	color: lightblue;
+	font-size: 18px;
+	box-shadow: inset 0 2px gray;
+	-webkit-transition: all .5s step-end;
+}
+
+.box-7:hover{
+	width: 300px;
+	height: 300px;
+	font-size: 32px;
+	box-shadow: 0 4px gray;
+	-webkit-transition: all .5s step-end;
+}
+
+.box-8{
+	background: rgb(174,84,209);
+	color: white;
+	font-size: 18px
+	box-shadow: 2px 2px 3px rgb(106,,223,230);
+	-webkit-transition: background 1s easeout;
+}
+
+.box-8:hover{
+	background: #de1bb7;
+	font-size: 32px;
+	-webkit-transform: rotate(20deg);
+	-webkit-transition: background 1s easeout;
+}
+
+
+
+
+
+
+
+
+
