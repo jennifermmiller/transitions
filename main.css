@@ -3,44 +3,7 @@ body{
 	padding: 0;
 }
 
-
-.box-1{
-	margin: 50px auto;
-	width: 200px;
-	height: 125px;
-	background: rgb(179,179,238);
-	box-shadow: inset 0 -6px 0 rgb(121,123,180);
-	border-radius: 6px;
-	-webkit-transition: all 0.1s ease; /*all represents all of what comes next. can select property and ignore the rest*/
-}
-
-.box-1:hover{
-	margin-top: 53px;
-	height: 122px;
-	-webkit-transform: rotate(180deg);
-	box-shadow: inset 0 -3px 0 rgb(121,121,180);
-}
-
-
-/*.box-1:active, .active {
-	margin-top: 53px;
-	height: 122px;
-	box-shadow: inset 0 3px 0 rgb(121,121,180);
-}*/
-
-.box-2{
-	margin: 50px auto;
-	height: 200px;
-	width: 200px;
-	background: rgb(179,179,238);	
-	-webkit-transition: all 0.3s ease;
-}
-
-.box-2:hover{
-	-webkit-transform: rotate(60deg);
-	border-radius: 200px;
-}
-
+.box-2,
 .box-3,
 .box-4,
 .box-5,
@@ -59,96 +22,290 @@ body{
 	margin: 50px auto;
 }
 
-.box-3{
-	border: 1px solid red;
-	background: yellow;
-	-webkit-transition: all 1s ease;
+.container{
+	position: relative;
+	width: 300px;
+	height: 300px;
 }
 
-.box-3:hover{
+.box-1{
+	margin: 50px auto;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid #21ed80;
+	-webkit-transition: all .2s ease;
+}
+
+.box-1:active{
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid #ed218e;
+	margin-left: 200px;
+	-webkit-transform: rotate(60deg);
+}
+
+.box-2{
+	border: 1px solid red;
+	background: yellow;
+	position: absolute;
+	right: 0;
+	-webkit-transition: all 1s linear;
+}
+
+.box-2:hover{
 	background: orange;
 	width: 100px;
 	height: 100px;
-	-webkit-transition: all 4s;
+	position: absolute;
+	left: 0;
+	-webkit-transition: all 2s linear;
 }
 
-.box-4{
+.box-3{
 	background: pink;
 	color: red;
 	font-size: 16px;
+	line-height: 200px;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(99,74,94);
 	-webkit-transition: all 1s easeout;
 }
 
-.box-4:active{
+.box-3:active{
 	background: purple;
-	font-size: 32px;
+	font-size: 48px;
+	text-shadow: 3px 3px 1px rgb(99,74,94);
 	-webkit-transition: all 1s easeout;
 }
 
-.box-5{
+.box-4{
 	background: green;
 	border: darkgreen;
 	box-shadow: 1px 1px 2px gray;
 	-webkit-transition: all 0.5s;
 }
 
-.box-5:hover{
+.box-4:hover{
 	background: lightgreen;
 	box-shadow: 3px 3px 2px gray;
-	-webkit-transform: rotate(45deg);
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	-webkit-transform: rotate(180deg);
 	-webkit-transition: all 0.5s;	
 }
 
-.box-6{
-	background: lightblue;
-	color: yellow;
-	-webkit-transition: all 1s linear;
+.box-5{
+	margin-top: 50px;
+	background: rgb(81,76,74);
+	box-shadow: inset 0 -30px 0 #B05153;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s easeout; 
 }
 
-.box-6:active{
+.box-5:hover{
+	margin-top: 53px;
+	height: 202px;
+	-webkit-transform: rotate(180deg);
+	box-shadow: inset 0 -30px 0 rgb(121,121,180);
+	-webkit-transition: all 0.5s easeot;
+}
+
+.box-6{
+	display: inline-block;
+	position:absolute;
+	right: 0;
+	background: lightblue;
+	color: yellow;
+	-webkit-transition: all 1s step;
+}
+
+.box-6:hover{ 
+	position: absolute;
 	background: blue;
 	color: orange;
 	font-size: 32px;
-	-webkit-transform: rotate(180deg);
-	-webkit-transition: all .5s linear;
+	position: absolute;
+	left: 0;
+	-webkit-transition: all .5s step;
 }
 
 .box-7{
 	background: black;
 	color: lightblue;
 	font-size: 18px;
+	text-align: left;
 	box-shadow: inset 0 2px gray;
-	-webkit-transition: all .5s step-end;
+	-webkit-transition: all .5s linear;
 }
 
 .box-7:hover{
 	width: 300px;
 	height: 300px;
+	line-height: 300px;
 	font-size: 32px;
-	box-shadow: 0 4px gray;
-	-webkit-transition: all .5s step-end;
+	text-align: right;
+	box-shadow: 4px 4px 2px gray;
+	border-radius: 40px;
+	-webkit-transition: all .5s linear;
 }
 
 .box-8{
 	background: rgb(174,84,209);
-	color: white;
-	font-size: 18px
+	color: transparent;
 	box-shadow: 2px 2px 3px rgb(106,,223,230);
-	-webkit-transition: background 1s easeout;
+	-webkit-transition: background .2s step-end;
 }
 
 .box-8:hover{
 	background: #de1bb7;
-	font-size: 32px;
-	-webkit-transform: rotate(20deg);
-	-webkit-transition: background 1s easeout;
+	width: 500px;
+	color: white;
+	line-height: 200px;	
+	text-align: center;
+	box-shadow: 2px 2px 1px gray;
+	-webkit-transform: rotate(360deg);
+	-webkit-transition: all .2s step-end;
 }
 
+.box-9{
+	border-radius: 50%;
+	background: orange;
+	box-shadow: inset 6px 6px blue;
+	-webkit-transition: all 1s ease;
+}
 
+.box-9:active{
+	border-radius: 0;
+	background-color: blue;
+	box-shadow: 6px 6px orange;
+	-webkit-transform: rotate(180deg);
+}
 
+.box-10{
+	width: 400px;
+	background: red;
+	text-align: center;
+	line-height: 100px;
+	font-size: 32px;
+	box-shadow: 1px 1px 2px gray;
+	-webkit-transition: all .3s ease;
+}
 
+.box-10 .learn{
+	color: white;
+}
 
+.box-10 .sometimes{
+	color: transparent;
+}
 
+.box-10:hover .sometimes{
+	color: white;
+	-webkit-transition: all .3s ease;
+}
 
+.box-11{
+	background: gray;
+	border: 10px solid black;
+	box-shadow: 3px 3px 2px purple;
+	-webkit-transition: all .5s easeout;
+}
+
+.box-11:hover{
+	background: black;
+	border: 10px solid gray;
+	box-shadow: inset 3px 3px 2px purple;
+	-webkit-transition: all .5s step;
+}
+
+.box-12{
+	background: lightgreen;
+	font-size: 24px;
+	-webkit-transition: all .2s;
+}
+
+.box-12 .letter:first-child{
+	margin-left: 50px;
+}
+
+.box-12 .letter{
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 200px;
+	-webkit-transition: all .4s ease;
+}
+
+.letter:hover {
+	color: green;
+	font-size: 35px;
+	font-weight: bolder;
+		-webkit-transition: all .4s ease;
+}
+
+.box-13{
+	border:2px solid black;
+}
+
+.dot-red{
+	background: red;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.dot-blue{
+	background: blue;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+.dot-green{
+	background: green;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	-webkit-transition: all .2s ease;
+}
+
+.box-13:hover .dot-red,
+.box-13:hover .dot-blue,
+.box-13:hover .dot-green{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 75px 15px;
+	-webkit-transition: all .2s easeout;
+}
+
+.box-14{
+	background: purple;
+	border-radius: 50%;
+	-webkit-transition: all .3s;
+}
+
+.box-14:hover{
+	background: pink;
+	border-radius: 0;
+	-webkit-transform: rotate(360deg);
+}
+
+.box-15{
+	background: #4d4dd1;	
+	border-radius: 50%;
+	box-shadow: -4px -4px gray;
+	-webkit-transition: all 0.3s easeout;
+}
+
+.box-15:hover{
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	border: 50px solid #d1d14d;
+	box-shadow: 8px 8px gray;
+}
 
 
